@@ -1,18 +1,18 @@
-## Getting Started
+# Juego de ahorcado en JAVA
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este juego de "Ahorcado" combina conceptos fundamentales de la programación, como arreglos, declaraciones condicionales y bucles, para determinar la posición de cada letra que el usuario ingresa desde la consola. El objetivo es adivinar la palabra secreta dentro de un número limitado de intentos. Si el jugador logra completar la palabra antes de agotar los intentos, gana el juego; de lo contrario, pierde.
+## ¿Qué que herramientas utilizamos?
+1. Clase Scanner
+2. Declaraciones y asignaciones
+3. Arreglos
+4. Estructura de control: iterativa (Bucle)
+5. Clase String y sus métodos valueOf, charAt y length ()
+6. Clase Character y su método toLowerCase
+7. Estructura de control condicional
 
-## Folder Structure
+**En cuanto al código:**
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+ 1. Se han utilizado estructuras básicas como arreglos para almacenar las letras adivinadas y bucles para verificar cada intento.
+ 2. El juego sigue pidiendo al usuario que ingrese letras mientras no se complete la palabra y los intentos no se hayan agotado.
+ 3. Si el jugador adivina una letra, esta se coloca en la posición correspondiente dentro del arreglo de letras adivinadas. Si no acierta, se le resta un intento.
+ 4. Al final, si el jugador adivina todas las letras, se declara como ganador; en caso contrario, el juego termina y se muestra un mensaje de "Game Over".
